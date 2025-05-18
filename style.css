@@ -387,7 +387,7 @@ footer {
         font-size: 1rem;
     }
 }
-@keyframes slideInLeft {
+/* @keyframes slideInLeft {
   from { transform: translateX(-100%); opacity: 0; }
   to   { transform: translateX(0); opacity: 1; }
 }
@@ -416,4 +416,4 @@ footer {
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
-}
+} */
