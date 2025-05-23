@@ -368,7 +368,7 @@ section h2 {
 
 /* Footer */
 footer {
-    background: var(--secondary-color);
+    background: #ffe4e4;
     text-align: center;
     padding: 1rem;
     color: var(--text-color);
@@ -487,43 +487,46 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    
     .nav-links {
-    display: none;
-    flex-direction: column;
-    gap: 1rem;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    position: absolute;
-    right: 10px;
-    top: 60px;
-    z-index: 10;
-  }
+        display: none;
+        flex-direction: column;
+        gap: 2.5rem;
+        background-color: #f0bbf0;
+        padding-bottom: 1000px;
+        padding-right: 10px;
+        border-radius: 5px;
+        position: absolute;
+        left: -1rem;
+        top: 47px;
 
-  /* Show dropdown nav links on activation */
-  .nav-links.active {
-    display: flex;
-  }
+        z-index: 10;
+    }
 
-  /* Show the three-dot toggle button */
-  .nav-toggle {
-    display: block;
-  }
+    /* Show dropdown nav links on activation */
+    .nav-links.active {
+        display: flex;
+    }
 
-  /* Optional: Adjust other responsive typography */
-  .section-hero h1 {
-    font-size: 2.2rem;
-  }
-  
-  .section-hero .role {
-    font-size: 1rem;
-  }
+    /* Show the three-dot toggle button */
+    .nav-toggle {
+        display: block;
+    }
 
-}
+    /* Optional: Adjust other responsive typography */
+    .section-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .section-hero .role {
+        font-size: 1rem;
+    }
 
-/* Mobile Interface Enhancements for Certificate List */
-@media (max-width: 768px) {
+    .theme-toggle {
+        display: none;
+    }
+    .profile-image{
+        display: none;
+    }
     .certificate-list {
         padding: 1rem;
         gap: 1rem;
@@ -545,6 +548,11 @@ footer {
         padding: 0.5rem 0;
         line-height: 1.4;
     }
+}
+
+/* Mobile Interface Enhancements for Certificate List */
+@media (max-width: 768px) {
+    
 }
 
 /* Extra small screens (optional, for phones <400px wide) */
