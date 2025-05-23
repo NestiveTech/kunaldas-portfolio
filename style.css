@@ -369,7 +369,7 @@ section h2 {
 
 /* Footer */
 footer {
-    background: #ffffff;
+    background: #ffff;
     text-align: center;
     padding: 10px;
     color: var(--text-color);
@@ -492,7 +492,7 @@ footer {
         display: none;
         flex-direction: column;
         gap: 2.5rem;
-        background-color: #ffffff;
+        background-color: #ffff;
         padding-bottom:100%;
         padding-right: 10px;
         border-radius: 5px;
