@@ -17,7 +17,7 @@ if (localStorage.getItem('theme') === 'dark') {
 // Scroll animations (fade-in)
 const faders = document.querySelectorAll('.fade-in');
 const appearOptions = {
-    threshold: 0.2
+    threshold: 0.1
 };
 const appearOnScroll = new IntersectionObserver(function(entries, observer) {
     entries.forEach(entry => {
