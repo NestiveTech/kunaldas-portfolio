@@ -478,7 +478,7 @@ footer {
 @media (max-width: 768px) {
     
     .nav-links {
-        display: none;
+        display: flex;
     }
     .navbar {
         justify-content: space-between;
