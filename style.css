@@ -492,14 +492,13 @@ footer {
         display: none;
         flex-direction: column;
         gap: 2.5rem;
-        background-color: #f0bbf0;
+        background-color: #ffffff;
         padding-bottom:100%;
         padding-right: 10px;
         border-radius: 5px;
         position: absolute;
         left: -1rem;
         top: 47px;
-
         z-index: 10;
     }
 
@@ -551,10 +550,7 @@ footer {
     }
 }
 
-/* Mobile Interface Enhancements for Certificate List */
-@media (max-width: 768px) {
-    
-}
+
 
 /* Extra small screens (optional, for phones <400px wide) */
 @media (max-width: 400px) {
