@@ -42,35 +42,46 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     z-index: 100;
 }
+/* Basic Navbar styles */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: left;
-    padding: 0.5% 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding: 0.5% 1%;
+  position: relative; /* Make positioning within mobile easier */
 }
-/* .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--primary-color);
-    margin-left: -250px;
-} */
+
 .nav-links {
-    list-style: none;
-    display: flex;
-    font-size: 20px;
+  list-style: none;
+  display: flex;
+  font-size: 20px;
 }
+
 .nav-links li {
-    margin-left: 1.5rem;
+  margin-left: 1.5rem;
 }
+
 .nav-links a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: 500;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s;
 }
+
 .nav-links a:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
+
+/* Three Dot Toggle Button (hidden by default) */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
 .theme-toggle {
     margin-left: 1.5rem;
 }
@@ -478,17 +489,37 @@ footer {
 @media (max-width: 768px) {
     
     .nav-links {
-        display: flex;
-    }
-    .navbar {
-        justify-content: space-between;
-    }
-    .section-hero h1 {
-        font-size: 2.2rem;
-    }
-    .section-hero .role {
-        font-size: 1rem;
-    }
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    z-index: 10;
+  }
+
+  /* Show dropdown nav links on activation */
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Show the three-dot toggle button */
+  .nav-toggle {
+    display: block;
+  }
+
+  /* Optional: Adjust other responsive typography */
+  .section-hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .section-hero .role {
+    font-size: 1rem;
+  }
+
 }
 
 /* Mobile Interface Enhancements for Certificate List */

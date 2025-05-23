@@ -30,3 +30,8 @@ const appearOnScroll = new IntersectionObserver(function(entries, observer) {
 faders.forEach(fader => {
     appearOnScroll.observe(fader);
 });
+
+// Toggle the mobile navigation menu on click
+document.querySelector('.nav-toggle').addEventListener('click', function () {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
