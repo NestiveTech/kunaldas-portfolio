@@ -315,8 +315,10 @@ section h2 {
 .projectimage1 {
     display: block;
     margin: 0 auto;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
 }
+
 
 .project-card h3 {
     margin-bottom: 0.5rem;
@@ -555,6 +557,11 @@ footer {
         padding: 0.5rem 0;
         line-height: 1.4;
     }
+
+    .projectimage1 {
+        max-width: 80%;
+    }
+
 }
 
 
@@ -568,4 +575,8 @@ footer {
     .certificate-list {
         padding: 0.5rem;
     }
+     .projectimage1 {
+        max-width: 90%;
+    }
+
 }
