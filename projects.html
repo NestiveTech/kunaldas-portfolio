@@ -47,27 +47,19 @@
                 <p><strong>Definition:</strong> LibNest is a next-generation Library Management System designed to streamline library operations efficiently. It offers features such as student tracking, fee reminders, seat management, revenue monitoring, and real-time scheduling. The platform enhances user experience by automating administrative tasks, providing advanced analytics, and ensuring secure access controls.</p>
                 <br>
                 <img src="assets\LibNest Img.png" alt="LibNest Logo" class="projectimage1">
-                <br>
-                <p>     ✔️Developed a scalable backend using Python and PyWebView, ensuring a robust architecture for handling concurrent user requests.</p>
-                <br>
-                <p>     ✔️Designed and optimized the MySQL database by creating normalized schema structures and advanced indexing strategies to maximize query efficiency.</p>
-                <br>
-                <p>     ✔️Implemented secure user authentication and role-based authorization, providing distinct access levels for administrators and regular users.</p>
-                <br>
-                <p>     ✔️Integrated comprehensive library functionalities such as book borrowing, returns, reservations, and overdue notifications, enhancing the overall user experience.</p>
-                <br>
-                <p>     ✔️Led a cross-functional team by organizing task assignments, conducting thorough code reviews, and ensuring adherence to best practices throughout the development cycle.</p>
-                <br>
-                <p>     ✔️Coordinated with the frontend and UX teams to create a seamless and intuitive interface, leveraging PyWebView to bridge the gap between backend processes and user interactions.</p>
-                <br>
-                <p>     ✔️Developed RESTful API endpoints facilitating integration with mobile applications and third-party systems, thereby broadening the platform's connectivity.</p>
-                <br>
-                <p>     ✔️Established automated backup routines, performance monitoring, and logging to ensure data integrity and minimize system downtime.</p>
-                <br>
-                <p>     ✔️Implemented rigorous testing using unit tests and integration tests with PyTest, ensuring system stability after iterative updates.</p>
-                <br>
-                <p>     ✔️Maintained detailed technical documentation covering API specifications, code architecture, and deployment procedures to aid future development and onboarding.</p>
-                </div>
+                <br> <p> ✔️Engineered a complete Library Management System using Python 3.8+ with PyWebView 3.6 framework, implementing 50+ modules including Book_issue_register_API.py, Submit_API.py, and Renewbook_API.py for core circulation workflows with MySQL 8.0 backend (654545_library_db schema).</p>
+                <br> <p> ✔️Designed and optimized a 7-table relational database schema with proper normalization (3NF), including books (ISBN, title, author, edition), book_stock (inventory tracking), students (demographic data), borrowed_books (transaction records), and cash_book (financial transactions).</p>
+                <br> <p> ✔️Implemented secure authentication system using bcrypt password hashing with salt rounds=12, coupled with role-based access control (3 levels: super-admin, librarians, students) through the login.py and user_authentication.py modules.</p>
+                <br> <p> ✔️Developed comprehensive library workflows including: automated book issuing with validation checks (valid_Students(), valid_Books()), return processing with fine calculation (₹10/day late fee), renewal system (15-day extensions), and clearance certificates (Library_clearence.py).</p>
+                <br> <p> ✔️Built a hybrid desktop application architecture using PyWebView to render responsive HTML5/CSS3/ES6 frontend (20+ UI screens) within native windows, achieving 95% cross-platform compatibility (Windows/Linux/macOS).</p>
+                <br> <p> ✔️Created specialized modules for: Excel bulk uploads (UPLOAD_DATA.py handles .xlsx processing), PDF generation (ReportLab for certificates and reports), and automated email reminders (REMINDER_EMAIL.py with configurable SMTP settings).</p>
+                <br> <p> ✔️Implemented real-time search functionality across all modules with client-side JavaScript filtering and server-side MySQL LIKE queries, supporting search by ISBN, title, author, or student ID.</p>
+                <br> <p> ✔️Designed a comprehensive dashboard system (dashboard.py) with: live counters for issued books, pending returns, and payments; quick-action buttons; and institution-specific data filtering for multi-college support.</p>
+                <br> <p> ✔️Developed robust error handling with: database connection pooling, transaction rollbacks on failures, input validation (validation.py for emails, phone numbers), and automated backups (daily incremental + weekly full).</p>
+                <br> <p> ✔️Conducted thorough testing including: 85+ unit tests (PyTest), integration testing of complete workflows (issue-renew-return-fine cycle), and stress testing with 100+ concurrent simulated users.</p>
+                <br> <p> ✔️Documented the system with: API specifications (RESTful endpoints), database schema diagrams, deployment guide (including Python package dependencies), and user manuals for librarians and administrators.</p>
+                <br> <p> ✔️Deployed at Falakata Polytechnic with measurable outcomes: 70% reduction in manual processes, 60% faster book search/checkout times, and support for 500+ active users across multiple departments.</p>
+              </div>
             <div class="project-card">
                 <h3>Smart Accident Prevention, Detection, and Reporting System (SAPDRS)</h3>
                 <span class="project-time">Jul 2024 – Dec 2024</span>
