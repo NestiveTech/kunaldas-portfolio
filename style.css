@@ -330,8 +330,24 @@ section h2 {
 }
 
 /* Contact Section */
+.contact-info{
+    background-color: #e9fbfc;
+    box-shadow: #333;
+    border-radius: 20px;
+}
+.con{
+    
+    background-color: #ffffff;
+    box-shadow: #333;
+    border-radius: 5px;
+}
+.kd{
+    font-weight: bolder;
+    font-size: 50px;
+    color: #004c99;
+}
 .section-contact .contact-info {
-    text-align: center;
+    text-align: justify;
     margin-bottom: 2rem;
     padding: 20px;
 }
@@ -484,6 +500,8 @@ footer {
     margin-right: 10px;
 }
 
+
+
 /* Adding Animations */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
@@ -580,3 +598,4 @@ footer {
     }
 
 }
+

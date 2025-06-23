@@ -35,3 +35,33 @@ faders.forEach(fader => {
 document.querySelector('.nav-toggle').addEventListener('click', function () {
     document.querySelector('.nav-links').classList.toggle('active');
 });
+
+// 🖼️ Image Zoom Modal for Gallery
+document.querySelectorAll('.gallery-grid img').forEach(img => {
+  img.addEventListener('click', (e) => {
+    e.preventDefault(); // prevent <a href=""> from triggering
+    showImageModal(img.src, img.alt);
+  });
+});
+
+function showImageModal(src, altText = '') {
+  const overlay = document.createElement('div');
+  overlay.classList.add('image-modal-overlay');
+
+  const image = document.createElement('img');
+  image.src = src;
+  image.alt = altText;
+  image.className = 'image-modal-img';
+
+  const closeBtn = document.createElement('span');
+  closeBtn.innerHTML = '&times;';
+  closeBtn.className = 'image-modal-close';
+
+  // Remove modal on click
+  overlay.addEventListener('click', () => overlay.remove());
+  closeBtn.addEventListener('click', () => overlay.remove());
+
+  overlay.appendChild(image);
+  overlay.appendChild(closeBtn);
+  document.body.appendChild(overlay);
+}
