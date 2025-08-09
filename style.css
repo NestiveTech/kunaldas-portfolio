@@ -1151,7 +1151,7 @@ section {
 
 .logo-rotate {
     width: 120px;
-    margin-top: 200px;
+    margin-top: 500px;
     height: 120px;
     object-fit: contain;
     animation: rotateHorizontal 4s linear infinite;
