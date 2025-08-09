@@ -376,7 +376,7 @@ input:checked + .theme-toggle-slider:before {
 }
 
 .hero-content {
-  max-width: 900px;
+  max-width: 800px;
   margin-top: -20px;
   padding: var(--space-4xl) var(--space-lg);
   animation: slideInUp 0.8s var(--ease-out) forwards;
@@ -1141,15 +1141,15 @@ section {
 }
 
 /* Rotating Logo Styles */
-.rotating-logo {
+/* .rotating-logo {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     /* margin-bottom: -100px; */
     /* padding: 1rem; */
-}
+/* } */
 
-.logo-rotate {
+/* .logo-rotate {
     width: 120px;
     height: 120px;
     object-fit: contain;
@@ -1161,10 +1161,10 @@ section {
 .logo-rotate:hover {
     animation-play-state: paused;
     transform: scale(1.1);
-}
+} */
 
 /* Horizontal Rotation Animation */
-@keyframes rotateHorizontal {
+/* @keyframes rotateHorizontal {
     0% {
         transform: rotateY(0deg);
     }
@@ -1180,10 +1180,10 @@ section {
     100% {
         transform: rotateY(360deg);
     }
-}
+} */
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .logo-rotate {
         width: 80px;
         height: 80px;
@@ -1203,7 +1203,7 @@ section {
     .rotating-logo {
         margin-bottom: 1rem;
     }
-}
+} */
 
 
 .cert-item {
