@@ -362,7 +362,7 @@ input:checked + .theme-toggle-slider:before {
 
 /* Hero section */
 .section-hero {
-  min-height: 100vh;
+  min-height: 130vh;
   display: flex;
   align-items: center;
   justify-content: center;
