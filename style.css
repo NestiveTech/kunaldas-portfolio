@@ -377,7 +377,7 @@ input:checked + .theme-toggle-slider:before {
 
 .hero-content {
   max-width: 800px;
-  margin-top: -100px;
+  margin-top: 100px;
   padding: var(--space-4xl) var(--space-lg);
   animation: slideInUp 0.8s var(--ease-out) forwards;
   
@@ -409,7 +409,7 @@ input:checked + .theme-toggle-slider:before {
 
 .hero-actions {
   display: flex;
-  gap: var(--space-lg);
+  gap:3%;
   justify-content: center;
   flex-wrap: wrap;
 }
