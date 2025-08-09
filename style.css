@@ -1145,12 +1145,13 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: -100px; */
+    margin-bottom: 10px;
     /* padding: 1rem; */
 }
 
 .logo-rotate {
     width: 120px;
+    margin-top: 70px;
     height: 120px;
     object-fit: contain;
     animation: rotateHorizontal 4s linear infinite;
