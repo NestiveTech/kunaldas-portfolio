@@ -55,7 +55,7 @@
   --space-xs: clamp(0.25rem, 0.5vw, 0.375rem);
   --space-sm: clamp(0.5rem, 0.8vw, 0.625rem);
   --space-md: clamp(0.75rem, 1.2vw, 1rem);
-  --space-lg: clamp(1rem, 1.8vw, 1.625rem);
+  /* --space-lg: clamp(1rem, 1.8vw, 1.625rem); */
   --space-xl: clamp(1.625rem, 2.5vw, 2.625rem);
   --space-2xl: clamp(2.625rem, 4vw, 4.25rem);
   --space-3xl: clamp(4.25rem, 6vw, 6.875rem);
@@ -251,7 +251,7 @@ a:hover {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: var(--space-lg);
+  gap: 10px;
   align-items: center;
 }
 
@@ -262,8 +262,7 @@ a:hover {
   font-weight: 500;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links a:hover{
   background: oklch(0.7 0.15 270 / 0.1);
   color: var(--color-primary);
 }
@@ -935,7 +934,7 @@ section {
     text-align: center;
   margin-top: var(--space-2xl);
 } */
-#resume-section {
+.resume-section {
   text-align: center;
   margin-top: var(--space-2xl);
   max-width: 1200px;
